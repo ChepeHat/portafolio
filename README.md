@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-# portafolio
 Portafolio / Challenge Alura Latam
 =======
 # Challenge ONE | Front End -  Portafolio
