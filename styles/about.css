@@ -1,0 +1,46 @@
+.about{
+    background-color: #e0e0e0;
+    padding: 40px;
+    color: #464646;
+}
+
+.about__container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about__title{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.about__paragraph{
+    line-height: 22px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/*Tablet*/
+@media (min-width: 834px) {
+    .about__title{
+        text-align: start;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .about__container{
+        padding: 0 150px 0 0;
+    }
+    
+}
+
+/*Desktop*/
+@media (min-width: 1024px) {
+
+    .about__container{
+        padding: 0 200px 0 0;
+    }
+    
+}

@@ -1,0 +1,94 @@
+/* Experiencia*/
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    color: #464646;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.experience__section__title{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.experience__box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experience__img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.experience__info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.experience__title{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.experience__text{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.experience__description{
+    display: flex;
+    gap: 15px;
+}
+
+
+.experiencia__boton--repo, .experience__boton--demo{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.experiencia__boton--repo{
+    background-color: #F5F5F5;
+    border: 1px solid #331E65;
+    color: #331E65;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.experience__boton--demo{
+    border: none;
+    background-color: #331E65;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.experiencia__boton--repo:hover, .experience__boton--demo:hover{
+    background-color: #8A7FA4;
+}
+
+
+/*Desktop*/
+@media (min-width: 1024px) {
+    .experience__box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .experience__box:nth-child(3) {
+        flex-direction: row-reverse;
+    }
+}

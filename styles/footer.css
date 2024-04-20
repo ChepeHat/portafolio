@@ -1,0 +1,12 @@
+footer{
+    background-color: rgba(0, 0, 0, 0.900);
+    padding: 30px;
+}
+.footer__rodapie{
+    display: flex;
+    flex-direction: column;
+    font-size: 8px;
+    color: white;
+    text-align: center;
+    gap: 5px;
+}

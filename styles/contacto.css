@@ -1,0 +1,236 @@
+/* Sección de contacto */
+
+.formcontacto{
+    background-color: #e0e0e0;
+    padding: 30px;
+}
+
+.formcontacto__contacto{
+    display: flex;
+    flex-direction: column;
+    color: #464646;
+    gap: 30px;
+}
+
+.formcontacto--izquierda{
+    display: none;
+}
+
+.formcontacto__text{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formcontacto__title{
+    font-size: 22px;
+    font-weight: 600; 
+
+}
+
+.formcontacto__subtext{
+    line-height: 16px;
+    font-size: 16px;
+    font-weight: 400; 
+}
+
+.formcontacto__form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formcontacto__grupo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.formcontacto__input-error{
+    font-size: 12px;
+    line-height: 15px;  
+    display: none;
+    margin-bottom: 0;
+}
+
+.formcontacto__input-error-activo {
+	display: block;
+}
+
+.formcontacto__validacion{
+    z-index: 100;
+    right:15px;
+    bottom: 20px;
+    position: absolute;
+    font-size: 16px;
+    opacity: 0;
+}
+
+.formcontacto__grupo-input{
+    position: relative;
+}
+
+.formcontacto__input{
+    width: 95%;
+    background: white;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-bottom: 4px solid transparent; /* Asegúrate de definir un grosor para el borde */
+    transition: border-color 0.3s;
+}
+
+.formcontacto__input::placeholder{
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    color: #A2A2A2;
+}
+
+.formcontacto__input:focus {
+    border-color: #331E65; 
+    outline: none;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.100);
+}
+
+.formcontacto__textarea{
+    width: 98%;
+    font-size: 16px;
+    height: 130px;
+    resize: none;
+    padding: 12px 0 0 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.100);
+    border-bottom: 4px solid transparent; /* Asegúrate de definir un grosor para el borde */
+    transition: border-color 0.3s;
+}
+
+.formcontacto__textarea:focus {
+    border-color: #331E65; 
+}
+
+.formcontacto__textarea::placeholder{
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    color: #A2A2A2;
+}
+
+.formcontacto__mensaje{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+	height: 45px;
+	background: #F66060;
+    color: white;
+	padding: 0 15px;
+	border-radius: 3px;
+    display: none;
+}
+
+.formcontacto__mensaje-activo{
+    display: flex;
+}
+
+.formcontacto__btn{
+    display: flex;
+    padding: 10px;
+    width: 145px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.formcontacto__btn{
+    border: none;
+    background-color: #331E65;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.formcontacto__btn:hover{
+    background-color: #8A7FA4;
+}
+
+.formcontacto__mensaje-exito{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+	height: 45px;
+    color: #119200;
+	padding: 0 15px;
+	border-radius: 3px;
+    font-size: 18px;
+}
+.formcontacto__mensaje-exito-activo{
+    display: flex;
+}	
+
+/* Tablet */
+@media (min-width: 834px){
+    .formcontacto__validacion{
+        right:20px;
+        font-size: 20px;
+    }
+
+    .formcontacto__input{
+        width: 98%;
+    }
+
+    .formcontacto__textarea{
+        width: 100%;
+    }
+}
+
+/*Desktop*/
+@media (min-width: 1024px) {
+    
+    .formcontacto__contacto{
+        display: flex;
+        flex-direction: row;
+        color: #464646;
+        gap: 30px;
+    }
+
+    .formcontacto--izquierda{
+        display: flex;
+    }
+    
+    .formcontacto__input{
+        width: 97%;
+    }
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+
+.formcontacto__grupo-correcto .formcontacto__validacion {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formcontacto__grupo-incorrecto .formcontacto__grupo-label {
+	color: #bb2929;
+}
+
+.formcontacto__grupo-incorrecto .formcontacto__validacion {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formcontacto__grupo-incorrecto .formcontacto__grupo-input {
+	border: 3px solid #bb2929;
+}
+
+.formcontacto__grupo-incorrecto .formcontacto__input-error {
+	display: block;
+}
+
+
